@@ -17,7 +17,7 @@ cd 0-prework-assignment
 Start the notebook server:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 Open your browser to **http://localhost:8888**
@@ -31,7 +31,7 @@ When finished, save your notebook (Ctrl+S or File → Save).
 Stop the server with `Ctrl+C`, then:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Step 4: Push Your Answers
