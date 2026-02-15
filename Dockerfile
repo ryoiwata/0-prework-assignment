@@ -2,8 +2,8 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install Jupyter
-RUN pip install --no-cache-dir jupyter
+# Install Jupyter, PyTorch (CPU-only), and NumPy (required by PyTorch for tensor conversion)
+RUN pip install --no-cache-dir jupyter numpy matplotlib torch --extra-index-url https://download.pytorch.org/whl/cpu
 
 # Copy notebook files
 COPY . .
